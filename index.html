@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body onload="loadAgeSelector()">
+    <section>
+     <div id="div1"><img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Official_Logo_of_IIT%28BHU%29%2CVaranasi%2CIndia%2C2013.png"></div>
+     <div><h1 id="heading">
+             XYZ University
+    </h1></div>
+    <div style="margin-left: 10px; font-size: x-small;"><p>Varanasi | 221005</p></div>
+
+
+
+    </section>
+    <br><br>
+    <div id ="form">
+        <form id="inputform">
+            <main>
+
+           <div>First Name: <br><input type ="text" class="inputText" pattern="^[a-zA-Z]+$" placeholder="First Name" autocomplete="off" maxlength="20" required autofocus></div>
+           
+           <div>Last Name: <br><input type ="text" class="inputText" placeholder="Last Name" autocomplete="off" maxlength="20" required></div>
+           
+           <div>Class: <br><input type ="text" name="title" class="inputText" placeholder="Class" autocomplete="off" required><br><br></div>
+           
+           <div>Year of Passing: <br><select class="inputText" id="yearselect" style="width: 13.3em; height: 2.8em;"></select>
+           <script src="index.js"></script>
+           </div>
+           
+           
+           <div>Percentage of Marks:<br><input type ="number" max="100" min="0" class="inputText" autocomplete="off" required></div>
+           
+           </main>
+
+           
+            <button type="submit" class="btn"><b style="font-size: larger;">Submit</b></button>
+           
+            </form>
+    </div>
+
+    
+</body>
+</html>
+
+
+
+
+
