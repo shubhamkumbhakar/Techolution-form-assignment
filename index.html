@@ -31,7 +31,18 @@
            <div>Class: <br><input type ="text" name="title" class="inputText" placeholder="Class" autocomplete="off" required><br><br></div>
            
            <div>Year of Passing: <br><select class="inputText" id="yearselect" style="width: 13.3em; height: 2.8em;"></select>
-           <script src="index.js"></script>
+           <script>
+            function loadAgeSelector(){
+            var startyear = 1900;
+            var endyear = 2017;
+            for (var i = startyear;i<=endyear;i++){
+            node=document.createElement("Option");
+            textnode=document.createTextNode(i);
+            node.appendChild(textnode);
+            document.getElementById("yearselect").appendChild(node);
+                }
+            }
+           </script>
            </div>
            
            
